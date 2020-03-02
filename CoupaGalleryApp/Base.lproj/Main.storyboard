@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R1H-9s-40a">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="oq6-Ly-cAO">
+            <objects>
+                <viewController id="R1H-9s-40a" customClass="ViewController" customModule="CoupaGalleryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JVP-em-sjD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Welcome to..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JGq-fQ-T1l">
+                                <rect key="frame" x="119" y="38" width="136" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liD-8d-uZi">
+                                <rect key="frame" x="147.5" y="582" width="80" height="30"/>
+                                <state key="normal" title="Get Started"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Gl3-h3-Ny3"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="volcano1" translatesAutoresizingMaskIntoConstraints="NO" id="7ke-yG-Dfr">
+                                <rect key="frame" x="76" y="152" width="188" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="building1" translatesAutoresizingMaskIntoConstraints="NO" id="VtD-Bh-WaP">
+                                <rect key="frame" x="120" y="164" width="155" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass1" translatesAutoresizingMaskIntoConstraints="NO" id="ELv-cZ-X3G">
+                                <rect key="frame" x="143" y="179" width="155" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNB-6l-iyg">
+                                <rect key="frame" x="16" y="452" width="343" height="96"/>
+                                <string key="text">Built using Unsplash's online library of photos, this application allows users to view high quality photos of their favorite things from their phone.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Photo Gallery" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RV1-dX-xts">
+                                <rect key="frame" x="43" y="62" width="289" height="82"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JGq-fQ-T1l" firstAttribute="centerX" secondItem="9zU-Re-vhB" secondAttribute="centerX" id="51f-Fk-Wge"/>
+                            <constraint firstItem="yNB-6l-iyg" firstAttribute="centerX" secondItem="9zU-Re-vhB" secondAttribute="centerX" id="6k1-p4-Ffr"/>
+                            <constraint firstItem="RV1-dX-xts" firstAttribute="centerX" secondItem="9zU-Re-vhB" secondAttribute="centerX" id="GHz-Pk-GUK"/>
+                            <constraint firstItem="JGq-fQ-T1l" firstAttribute="top" secondItem="9zU-Re-vhB" secondAttribute="top" constant="38" id="Hyf-Dd-kzR"/>
+                            <constraint firstItem="9zU-Re-vhB" firstAttribute="trailing" secondItem="yNB-6l-iyg" secondAttribute="trailing" constant="16" id="LSy-53-hhu"/>
+                            <constraint firstItem="liD-8d-uZi" firstAttribute="centerX" secondItem="9zU-Re-vhB" secondAttribute="centerX" id="R4M-PW-n6O"/>
+                            <constraint firstItem="9zU-Re-vhB" firstAttribute="bottom" secondItem="yNB-6l-iyg" secondAttribute="bottom" constant="119" id="b99-88-ipW"/>
+                            <constraint firstItem="yNB-6l-iyg" firstAttribute="leading" secondItem="9zU-Re-vhB" secondAttribute="leading" constant="16" id="cap-Gp-5bc"/>
+                            <constraint firstItem="9zU-Re-vhB" firstAttribute="bottom" secondItem="liD-8d-uZi" secondAttribute="bottom" constant="55" id="fXk-bI-N7h"/>
+                            <constraint firstItem="RV1-dX-xts" firstAttribute="top" secondItem="9zU-Re-vhB" secondAttribute="top" constant="62" id="gEC-pb-z8c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9zU-Re-vhB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="034-sF-uEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578.39999999999998" y="-35.532233883058474"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoupaGalleryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Image Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQp-Xg-hkP">
+                                <rect key="frame" x="16" y="20" width="343" height="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tcZ-mO-OZ5">
+                                <rect key="frame" x="0.0" y="119" width="375" height="528"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pdQ-P6-6nd">
+                                    <size key="itemSize" width="375" height="529"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="fYi-UM-GM4" customClass="DataCollectionViewCell" customModule="CoupaGalleryApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-0.5" width="375" height="529"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4MH-Zt-ZGR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="529"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kMN-HC-0bv">
+                                                    <rect key="frame" x="8" y="-17" width="359" height="521"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="kMN-HC-0bv" secondAttribute="trailing" constant="8" id="1Vr-o2-cQh"/>
+                                                <constraint firstItem="kMN-HC-0bv" firstAttribute="leading" secondItem="4MH-Zt-ZGR" secondAttribute="leading" constant="8" id="8hF-wx-Rgm"/>
+                                                <constraint firstItem="kMN-HC-0bv" firstAttribute="top" secondItem="4MH-Zt-ZGR" secondAttribute="top" id="bAR-Nx-6lU"/>
+                                                <constraint firstItem="kMN-HC-0bv" firstAttribute="centerX" secondItem="4MH-Zt-ZGR" secondAttribute="centerX" id="iXv-6N-jdf"/>
+                                                <constraint firstAttribute="bottom" secondItem="kMN-HC-0bv" secondAttribute="bottom" constant="8" id="kJj-gb-LIY"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="375" height="529"/>
+                                        <connections>
+                                            <outlet property="photoImageView" destination="kMN-HC-0bv" id="cKp-hh-9Su"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="J1I-7s-pDA"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qaM-aS-JLW"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8L-RA-JNU">
+                                <rect key="frame" x="90" y="62" width="195" height="30"/>
+                                <state key="normal" title="Search Library"/>
+                                <connections>
+                                    <action selector="presentUnsplashPhotoPickerWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="21G-cF-6tg"/>
+                                    <action selector="startScrolling:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6aU-y9-CO1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tcZ-mO-OZ5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="19t-DM-qbh"/>
+                            <constraint firstItem="tcZ-mO-OZ5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1S1-ia-wlj"/>
+                            <constraint firstItem="tcZ-mO-OZ5" firstAttribute="top" secondItem="r8L-RA-JNU" secondAttribute="bottom" constant="19" id="4XE-9j-ASs"/>
+                            <constraint firstItem="eQp-Xg-hkP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="aD5-km-J72"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eQp-Xg-hkP" secondAttribute="trailing" constant="16" id="jDR-Fd-5kM"/>
+                            <constraint firstItem="tcZ-mO-OZ5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jW9-32-WV5"/>
+                            <constraint firstItem="eQp-Xg-hkP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oYc-9X-R0y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r8L-RA-JNU" secondAttribute="trailing" constant="120" id="os9-7R-m0X"/>
+                            <constraint firstItem="r8L-RA-JNU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="qfR-la-7Ay"/>
+                            <constraint firstItem="r8L-RA-JNU" firstAttribute="top" secondItem="eQp-Xg-hkP" secondAttribute="bottom" constant="16" id="t3I-y0-xWx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qZq-fY-c9F"/>
+                    <connections>
+                        <outlet property="collectionView" destination="tcZ-mO-OZ5" id="Ezf-cg-Fgi"/>
+                        <outlet property="textField" destination="eQp-Xg-hkP" id="yKe-Ko-a6g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293.60000000000002" y="-34.632683658170919"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="building1" width="1000" height="1500"/>
+        <image name="grass1" width="1000" height="1510"/>
+        <image name="volcano1" width="1000" height="1500"/>
+    </resources>
+</document>
