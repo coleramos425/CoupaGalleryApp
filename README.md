@@ -10,5 +10,5 @@ To refresh a search the user can simply pull down on the page to return home or 
 
 #### Installation Requirements: ####
 -Xcode
--Unsplash Cocoapod (https://unsplash.com/developers
+-Unsplash Cocoapod (https://unsplash.com/developers)
 -Ruby (for gem instalation of cocoapods)
